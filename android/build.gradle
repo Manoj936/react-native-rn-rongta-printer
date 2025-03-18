@@ -9,6 +9,7 @@ buildscript {
   }
 
   dependencies {
+    
     classpath "com.android.tools.build:gradle:8.7.2"
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${getExtOrDefault('kotlinVersion')}"
@@ -98,6 +99,7 @@ repositories {
 def kotlin_version = getExtOrDefault("kotlinVersion")
 
 dependencies {
+  implementation fileTree(dir: "libs", include: ["*.jar"]) // Add this line
   implementation "com.facebook.react:react-android"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
@@ -108,4 +110,12 @@ if (isNewArchitectureEnabled()) {
     libraryName = "RnRongtaPrinter"
     codegenJavaPackageName = "com.rnrongtaprinter"
   }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
 }
