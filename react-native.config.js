@@ -8,7 +8,6 @@ module.exports = {
       android: {
         cmakeListsPath: 'generated/jni/CMakeLists.txt',
       },
-      
     },
   },
 };

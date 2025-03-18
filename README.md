@@ -10,7 +10,6 @@ npm install react-native-rn-rongta-printer
 
 ## Usage
 
-
 ```js
 import { multiply } from 'react-native-rn-rongta-printer';
 
@@ -18,7 +17,6 @@ import { multiply } from 'react-native-rn-rongta-printer';
 
 const result = multiply(3, 7);
 ```
-
 
 ## Contributing
 

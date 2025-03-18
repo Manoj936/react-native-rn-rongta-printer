@@ -1,6 +1,5 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply  } from 'react-native-rn-rongta-printer';
-
+import { multiply } from 'react-native-rn-rongta-printer';
 const result = multiply(3, 7);
 
 export default function App() {
